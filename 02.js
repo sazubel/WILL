@@ -10,8 +10,12 @@ function stringMasLarga(strings) {
   // Ej:
   // stringMasLarga(['hi', 'hello', 'ni hao', 'guten tag']); debe retornar 'guten tag'
   // stringMasLarga(['JavaScript', 'HTML', 'CSS']); debe retornar 'JavaScript'
+  let string_mas_larga = "";
+  strings.forEach(element => {
+    if(element.length > string_mas_larga.length ) string_mas_larga = element;
+  });
+  return string_mas_larga;
 
-  // Tu código aca
 }
 
 // No modifiques nada debajo de esta linea //
